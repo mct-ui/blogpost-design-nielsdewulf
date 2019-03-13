@@ -1,4 +1,48 @@
 /*
+    Fonts
+    ---
+    @font-face declarations
+
+ */
+@font-face {
+    font-family: "Inter UI web";
+    font-weight: 400;
+    src: url("../fonts/Inter-UI/Inter-UI-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter UI web";
+    font-weight: 700;
+    src: url("../fonts/Inter-UI/Inter-UI-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Droid Serif web";
+    font-weight: 400;
+    src: url("../fonts/Droid-serif/DroidSerif-Regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif web";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/Droid-serif/DroidSerif-Italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif web";
+    font-weight: 700;
+    src: url("../fonts/Droid-serif/DroidSerif-Bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Droid Serif web";
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/Droid-serif/DroidSerif-BoldItalic-webfont.woff") format("woff");
+}
+
+/*
     Elements: Page
     ---
     Default markup for page level elements
@@ -7,7 +51,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    /*font-family: "Inter UI web", "Helvetica Neue", Helvetica, arial, sans-serif;*/
+    font-family: "Droid Serif web", Georgia, serif;
     color: #111;
     padding: 48px 24px 24px;
 }
@@ -46,9 +91,10 @@ img {
     ---
     Default markup for typographic elements
 */
-h1,h2,h3{
+h1, h2, h3 {
     color: #17181A;
 }
+
 h1 {
     font-size: 36px;
     line-height: 40px;
@@ -60,11 +106,13 @@ h2 {
     line-height: 32px;
     margin: 0 0 24px;
 }
-::selection{
+
+::selection {
     background: #00E6A1;
     color: white;
     text-shadow: none;
 }
+
 h3 {
     font-size: 18px;
     line-height: 24px;
@@ -143,7 +191,8 @@ a:focus {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -151,6 +200,7 @@ a:focus {
     html {
         padding: 48px 48px 24px;
     }
+
     h1 {
         font-size: 58px;
         line-height: 64px;
@@ -159,11 +209,13 @@ a:focus {
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /*
     Print styles.
@@ -183,16 +235,20 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
         content: " (" attr(href) ")";
     }
+
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -201,14 +257,17 @@ a:focus {
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -216,16 +275,19 @@ a:focus {
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
