@@ -93,6 +93,7 @@ img {
     ---
     Default markup for typographic elements
 */
+
 h1, h2, h3 {
     color: #17181A;
     font-family: "Inter UI web", "Helvetica Neue", Helvetica, arial, sans-serif;
@@ -109,6 +110,10 @@ h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
+}
+
+* + h2 {
+    margin-top: 48px;
 }
 
 ::selection {
