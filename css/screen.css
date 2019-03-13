@@ -46,11 +46,11 @@ img {
     ---
     Default markup for typographic elements
 */
-
+h1,h2,h3{
+    color: #17181A;
+}
 h1 {
-    font-family: "Times New Roman", serif;
     font-size: 36px;
-    font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
 }
@@ -60,7 +60,11 @@ h2 {
     line-height: 32px;
     margin: 0 0 24px;
 }
-
+::selection{
+    background: #00E6A1;
+    color: white;
+    text-shadow: none;
+}
 h3 {
     font-size: 18px;
     line-height: 24px;
@@ -123,18 +127,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #00A1E6;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #00E6A1;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #1ABAFF;
 }
 
 /* Small devices (landscape phones, 576px and up) */
